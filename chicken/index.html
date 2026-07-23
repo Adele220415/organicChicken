@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Chickens | Orders</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Organic Chickens home">
+        <span class="brand-mark">OC</span>
+        <span>
+          <strong>Organic Chickens</strong>
+          <small>Bulk sales and retail</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#order">Order</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Live and dressed chickens</p>
+          <h1>Fresh organic chickens for homes, events, and retailers.</h1>
+          <p>
+            Place an order for live chickens, dressed 5kg and 10kg packs, or a
+            custom quantity. Fast confirmation through call or WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#order">Place order</a>
+            <a class="button ghost" href="tel:+2348063944434">Call owner</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-label="Organic chicken business flyer">
+          <img
+            src="organic-chickens-flyer.png"
+            alt="Organic chickens sold here flyer with live and dressed chickens"
+          />
+        </div>
+      </section>
+
+      <section class="product-band" id="products" aria-label="Available products">
+        <article class="product-card">
+          <span class="product-icon">LIVE</span>
+          <h2>Live Chickens</h2>
+          <p>Healthy birds for homes, restaurants, and bulk buyers.</p>
+          <strong data-price="live">₦18,000 each</strong>
+        </article>
+        <article class="product-card">
+          <span class="product-icon">5KG</span>
+          <h2>Dressed 5kg</h2>
+          <p>Cleaned, packed, and ready for cooking or storage.</p>
+          <strong data-price="five">₦25,000</strong>
+        </article>
+        <article class="product-card">
+          <span class="product-icon">10KG</span>
+          <h2>Dressed 10kg</h2>
+          <p>A better-value pack for families, food vendors, and events.</p>
+          <strong data-price="ten">₦50,000</strong>
+        </article>
+      </section>
+
+      <section class="order-section" id="order">
+        <div class="section-heading">
+          <p class="eyebrow">Quick order</p>
+          <h2>Tell us what you need</h2>
+          <p>
+            Fill the form and send the order directly to the owner on WhatsApp.
+          </p>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <label>
+            Full name
+            <input type="text" id="customerName" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Phone number
+            <input type="tel" id="customerPhone" placeholder="080..." required />
+          </label>
+
+          <label>
+            Order type
+            <select id="orderType" required>
+              <option value="live">Live chicken</option>
+              <option value="5kg">Dressed chicken - 5kg</option>
+              <option value="10kg">Dressed chicken - 10kg</option>
+              <option value="custom">Custom order</option>
+            </select>
+          </label>
+
+          <label>
+            Quantity
+            <input type="number" id="quantity" min="1" value="1" required />
+          </label>
+
+          <label class="custom-field" id="customField">
+            Custom request
+            <textarea
+              id="customRequest"
+              rows="4"
+              placeholder="Example: 25 dressed chickens for Saturday morning"
+            ></textarea>
+          </label>
+
+          <label class="wide">
+            Delivery address or pickup note
+            <textarea
+              id="address"
+              rows="4"
+              placeholder="Enter delivery address or pickup preference"
+              required
+            ></textarea>
+          </label>
+
+          <div class="order-summary" aria-live="polite">
+            <span>Estimated total</span>
+            <strong id="totalAmount">₦18,000</strong>
+          </div>
+
+          <p class="order-disclaimer" aria-live="polite">DELIVERY CHARGES WILL BE ADDED TO THE TOTAL AMOUNT</p>
+
+          <button class="button primary wide" type="submit">Send order on WhatsApp</button>
+        </form>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Contact info</p>
+          <h2>Ready for bulk and retail orders.</h2>
+          <p>
+            Call the owner for pricing, slaughtering day, pickup, delivery, or
+            special event quantities.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="tel:+2348063944434">08063944434</a>
+          <a class="button ghost" href="https://wa.me/2348063944434" target="_blank" rel="noreferrer">
+            WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Organic Chickens Sold Here</span>
+      <span>Live chickens • Dressed chickens • Bulk and retail</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
